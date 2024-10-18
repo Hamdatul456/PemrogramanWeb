@@ -6,107 +6,63 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('./bg.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-}
-
-header {
-    background-color: #333;
-    padding: 10px 20px;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: center;
     align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
 }
 
-header .logo {
-    font-size: 24px;
-    color: #fff;
-}
-
-header nav ul {
-    list-style-type: none;
-    display: flex;
-}
-
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.hero {
-    text-align: center;
-    padding: 100px 0;
-}
-
-.hero h1 {
-    font-size: 48px;
-    font-weight: bold;
-}
-
-.hero p {
-    font-size: 24px;
-    margin: 20px 0;
-}
-
-.buttons {
-    margin-top: 40px;
-}
-
-.btn {
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 20px;
-    margin: 0 10px;
-    border-radius: 5px;
-    display: inline-block;
-}
-
-.btn-yellow {
-    background-color: #f1c40f;
-    color: #000;
-}
-
-.btn-blue {
-    background-color: #3498db;
-    color: #fff;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
+.container {
+    background-color: #fff;
     padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
     text-align: center;
 }
 
-.footer-content {
+input[type="text"] {
+    width: calc(100% - 50px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #DB7093;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #e9f5fc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.footer-content ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.footer-content ul li {
-    margin: 0 10px;
-}
-
-.footer-content ul li img {
-    width: 24px;
-    height: 24px;
-}
-
-.footer-content .contact-info {
-    text-align: right;
+li button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ff0000;
+    font-weight: bold;
 }
